@@ -1,11 +1,6 @@
 version: 2.1
 
 jobs:
-  sayhelloWorld:
-    description: A job that says Hello
-    machine: true
-    steps:
-      - run: echo "Hello World!"
   sayhelloWithParams:
     description: A job that says Hello
     parameters:
@@ -21,7 +16,4 @@ workflows:
   monWorkflow:
     jobs:
       - sayhelloWithParams:
-          saywhat: Intégration Web
-      - sayhelloWorld
-      - sayhelloWithParams:
-          saywhat: Everyone
+          saywhat: Everyones
