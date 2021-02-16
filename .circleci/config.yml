@@ -4,8 +4,12 @@ jobs:
   checkoutAndTest:
     machine: true
     steps:
-      - checkout
+      - run: pwd
       - run: ls
+      - run: git clone https://github.com/XavierSamuelHuppe/3p5-c3-backend.git
+      - run: ls
+      - run: cd 3p5-c3-backend
+
 workflows:
   build:
     jobs:
