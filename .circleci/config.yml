@@ -6,8 +6,8 @@ jobs:
       - image: cimg/node:15.8.0
     steps:
       - checkout
-      - run: cd cours5
-      - run: pwd
+      - run: cd cours5 && pwd
+      - run: cd cours5 && ls
 
 workflows:
   build:
