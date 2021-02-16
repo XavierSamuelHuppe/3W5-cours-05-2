@@ -9,7 +9,7 @@ jobs:
       - run: git clone https://github.com/XavierSamuelHuppe/3p5-c3-frontend.git
       - run: cd 3p5-c3-frontend && npm install
       - run: cd 3p5-c3-frontend && npm run build
-      - run: cp 3p5-c3-frontend/build /3p5-c3-backend
+      - run: cp -r ./3p5-c3-frontend/build ./3p5-c3-backend
       - run: cd 3p5-c3-backend && ls
 
 workflows:
