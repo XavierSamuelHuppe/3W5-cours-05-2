@@ -5,7 +5,7 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run: pwd
+      - run: ls
 workflows:
   build:
     jobs:
